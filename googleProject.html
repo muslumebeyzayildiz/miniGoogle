@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Google</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" class="logo" alt="Google Logo" />
+    
+
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" placeholder="Search..." required>
+      <!-- name="q" ->  sorguyu tutar-Google aramasında 'q' parametresi, sorgu metnini belirtir (query) -->
+      <br><input type="submit" value="Google Search" backgronf>
+      <!-- submit -> Formu gönderme butonu
+           placeholder -> Kutunun içindeki gri yazı (örnek metin gösterimi)
+           value -> Butonun üstünde görünen metin  -->
+    </form>
+
+
+
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" placeholder="I'm Feeling Lucky..." required>
+      <input type="hidden" name="btnI" value="1">
+      <!-- name="btnI" → Google bunu görünce "ilk sonuca git" moduna geçer -->
+      <!-- hidden	-> Formla birlikte gönderilen ama görünmeyen veri -->
+      <br><input type="submit" value="I'm Feeling Lucky">
+    </form>
+
+
+
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" placeholder="Search Images..." required>
+      <input type="hidden" name="tbm" value="isch">
+      <!-- tbm=isch parametresi: Arama sonuçlarını 'görsel' sekmesinde gösterir 
+           tbm -> "to be matched" 
+           value="isch" -> image search-->
+      <br><input type="submit" value="Image Search">
+    </form>
+</body>
+</html>
